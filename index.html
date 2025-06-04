@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCAL FARM</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="w-full text-white">
+        <div class="w-full bg-green-800">
+            <nav class="w-[80%] max-w-[400px] sm:max-w-lg md:max-w-7xl mx-auto flex flex-row justify-between items-center py-4">
+                <div class="text-4xl font-bold text-white">
+                    Green<span class="text-gray-300">Harvest</span>
+                </div>
+
+                <img src="./IMAGES/download-removebg-preview.png" alt="menu iamage" class="w-8 h-8 cursor-pointer sm:auto md:hidden" id="menu">
+                <ul class="flex flex-row gap-x-2 md:flex hidden">
+                    <li><a href="#home" class="hover:bg-green-500 hover:underline px-4 py-2 rounded-lg">Home</a></li>
+                    <li><a href="#about" class="hover:bg-green-500 hover:underline px-4 py-2 rounded-lg">About Us</a></li>
+                    <li><a href="#products" class="hover:bg-green-500 hover:underline px-4 py-2 rounded-lg">Products</a></li>
+                    <li><a href="#export" class="hover:bg-green-500 hover:underline px-4 py-2 rounded-lg">Export</a></li>
+                    <li><a href="#contact" class="hover:bg-green-500 hover:underline px-4 py-2 rounded-lg">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="h-screen bg-cover bg-center bg-no-repeat opacity-100 hover:opacity-95 transition-opacity-300" style="background-image: url('./IMAGES/4.jpg');">
+        <div class="flex items-center justify-center text-center pt-30">
+            <div id="container" class="container max-w-auto px-5 max-w-4xl mx-auto text-center text-white">
+                <h1 class="text-white text-7xl font-bold pb-20">From Ado Ekiti Farms to Global Tables</h1>
+                <p class="leading-tight  text-white text-xl font-bold mb-10">Premium organic produce grown with care in the fertile soils of Ekiti State, Nigeria and exported to over 20 countries worldwide.</p>
+                <a href="#products" class="btn bg-green-500 hover:bg-green-700 text-white text-xl font-bold px-7 py-3 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">Explore Our Products</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="container" class=" max-w-[1200px] mx-auto py-20 px-4">
+            <div class="hero-content">
+                <h1>From Ado Ekiti Farms to Global Tables</h1>
+                <p>Premium organic produce grown with care in the fertile soils of Ekiti State, Nigeria and exported to over 20 countries worldwide.</p>
+                <a href="#products" class="btn">Explore Our Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="/api/placeholder/600/400" alt="Green Harvest Farm Fields">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 2005 in the lush farmlands of Ado Ekiti, Green Harvest has grown from a small family farm to a leading agricultural exporter in Nigeria.</p>
+                    <p>Our commitment to sustainable farming practices and premium quality produce has earned us recognition across Africa, Europe, and Asia.</p>
+                    <p>With over 500 hectares of farmland and state-of-the-art processing facilities, we deliver the authentic taste of Nigeria to the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Our Premium Products</h2>
+            <p style="text-align: center;">Cultivated with care and exported with pride</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/400/300" alt="Cocoa Beans">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cocoa Beans</h3>
+                        <p>Premium fermented cocoa beans with rich flavor profiles, sought after by gourmet chocolate makers worldwide.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/400/300" alt="Cashew Nuts">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cashew Nuts</h3>
+                        <p>Large, whole cashew kernels with excellent taste and texture, processed using traditional methods.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/400/300" alt="Yam">
+                    </div>
+                    <div class="product-info">
+                        <h3>Yam</h3>
+                        <p>Fresh, high-quality yams from our farms to international markets, maintaining the authentic taste of Nigeria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="export" class="export">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Global Reach</h2>
+            <p>Our products are enjoyed in over 20 countries across 5 continents</p>
+            
+            <div class="world-map">
+                <img src="/api/placeholder/800/400" alt="World Map with Export Destinations">
+            </div>
+            
+            <div class="export-destinations">
+                <div class="destination">
+                    <div class="destination-icon">🇪🇺</div>
+                    <h3>Europe</h3>
+                    <p>UK, Germany, Netherlands, France</p>
+                </div>
+                
+                <div class="destination">
+                    <div class="destination-icon">🇺🇸</div>
+                    <h3>Americas</h3>
+                    <p>USA, Canada, Brazil</p>
+                </div>
+                
+                <div class="destination">
+                    <div class="destination-icon">🇦🇪</div>
+                    <h3>Middle East</h3>
+                    <p>UAE, Saudi Arabia, Qatar</p>
+                </div>
+                
+                <div class="destination">
+                    <div class="destination-icon">🇨🇳</div>
+                    <h3>Asia</h3>
+                    <p>China, Japan, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Get In Touch</h2>
+            <p style="text-align: center;">Interested in our products or partnership opportunities? Contact us today.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Km 5, Ado-Iworoko Road<br>Ado Ekiti, Ekiti State<br>Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+234 803 123 4567<br>+234 905 678 9012</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@greenharvest.com<br>exports@greenharvest.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Green Harvest</h4>
+                    <p>Bringing the best of Nigerian agriculture to the world since 2005.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                        <a href="#">LI</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#export">Export</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Cocoa Beans</a></li>
+                        <li><a href="#">Cashew Nuts</a></li>
+                        <li><a href="#">Yam</a></li>
+                        <li><a href="#">Ginger</a></li>
+                        <li><a href="#">Shea Butter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Certifications</h4>
+                    <ul>
+                        <li><a href="#">Global G.A.P</a></li>
+                        <li><a href="#">Organic Certified</a></li>
+                        <li><a href="#">Fair Trade</a></li>
+                        <li><a href="#">ISO 22000</a></li>
+                        <li><a href="#">HACCP</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Green Harvest Exports. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
