@@ -1,0 +1,75 @@
+h-screen = Full viewport height (100vh)
+bg-cover bg-center bg-no-repeat = Background image properties
+flex items-center = Flexbox with vertical centering
+text-center = Center-aligned text
+pt-20 = Top padding (80px equivalent)
+
+Content Container:
+
+container mx-auto px-5 = Responsive container with auto margins and horizontal padding
+max-w-4xl mx-auto = Maximum width with auto margins
+text-white = White text color
+
+Typography:
+
+text-5xl lg:text-6xl = Responsive font sizes (3.5rem on large screens)
+font-bold = Bold font weight
+mb-5 = Bottom margin (20px)
+leading-tight = Tight line height
+text-xl = Large text size for paragraph
+mb-8 = Bottom margin (32px)
+leading-relaxed = Relaxed line height
+
+Button:
+
+inline-block = Display type
+bg-green-500 hover:bg-green-700 = Green background with darker hover state
+text-white font-bold = White, bold text
+py-3 px-8 = Vertical and horizontal padding
+rounded-full = Fully rounded corners
+transition-all duration-300 = Smooth transitions
+transform hover:-translate-y-1 hover:shadow-lg = Hover effects (move up, add shadow)
+
+ .about {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-img {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-content {
+            flex: 1;
+        }
+.section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+.section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100px;
+            height: 4px;
+            background-color: var(--secondary-color);

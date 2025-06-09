@@ -1,0 +1,7 @@
+git add .
+
+git commit -m 'updatd'
+
+git push origin john
+
+git chckout john

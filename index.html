@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="w-full text-white">
+    <header class="fixed top-0 w-full text-white">
         <div class="w-full bg-green-800">
-            <nav class="w-[80%] max-w-[400px] sm:max-w-lg md:max-w-7xl mx-auto flex flex-row justify-between items-center py-4">
+            <nav class="w-[80%]   max-w-[400px] sm:max-w-lg md:max-w-7xl mx-auto flex flex-row justify-between items-center py-4">
                 <div class="text-4xl font-bold text-white">
                     Green<span class="text-gray-300">Harvest</span>
                 </div>
 
-                <img src="./IMAGES/download-removebg-preview.png" alt="menu iamage" class="w-8 h-8 cursor-pointer sm:auto md:hidden" id="menu">
+                <img src="./IMAGES/download-removebg-preview.png" class="w-8 h-8 cursor-pointer sm:auto md:hidden" id="menu">
                 <ul class="flex flex-row gap-x-2 md:flex hidden">
                     <li><a href="#home" class="hover:bg-green-500 hover:underline px-4 py-2 rounded-lg">Home</a></li>
                     <li><a href="#about" class="hover:bg-green-500 hover:underline px-4 py-2 rounded-lg">About Us</a></li>
@@ -27,39 +27,27 @@
         </div>
     </header>
 
-    <section id="hero" class="h-screen bg-cover bg-center bg-no-repeat opacity-100 hover:opacity-95 transition-opacity-300" style="background-image: url('./IMAGES/4.jpg');">
-        <div class="flex items-center justify-center text-center pt-30">
+    <section id="hero" class="h-[80vh] md:h-screen bg-cover bg-center bg-no-repeat opacity-100 hover:opacity-95 transition-opacity-300" style="background-image: url('./IMAGES/4.jpg');">
+        <div class="flex items-center justify-center text-center pt-30 md:pt-40">
             <div id="container" class="container max-w-auto px-5 max-w-4xl mx-auto text-center text-white">
-                <h1 class="text-white text-7xl font-bold pb-20">From Ado Ekiti Farms to Global Tables</h1>
+                <h1 class="text-white text-4xl md:text-7xl font-bold pb-10">From Ado Ekiti Farms to Global Tables</h1>
                 <p class="leading-tight  text-white text-xl font-bold mb-10">Premium organic produce grown with care in the fertile soils of Ekiti State, Nigeria and exported to over 20 countries worldwide.</p>
                 <a href="#products" class="btn bg-green-500 hover:bg-green-700 text-white text-xl font-bold px-7 py-3 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">Explore Our Products</a>
             </div>
         </div>
     </section>
-    <section>
-        <div id="container" class=" max-w-[1200px] mx-auto py-20 px-4">
-            <div class="hero-content">
-                <h1>From Ado Ekiti Farms to Global Tables</h1>
-                <p>Premium organic produce grown with care in the fertile soils of Ekiti State, Nigeria and exported to over 20 countries worldwide.</p>
-                <a href="#products" class="btn">Explore Our Products</a>
-            </div>
-        </div>
-    </section>
+   
    
 
     <!-- about section -->
-    <section id="about" class="p-6">
-        <div class="container">
-            <div class="about-container">
-                <div class="about-img">
-                    <img src="/" alt="Green Harvest Farm Fields">
-                </div>
-                <div class="about-content">
-                    <h2 class="section-title">Our Story</h2>
-                    <p>Founded in 2005 in the lush farmlands of Ado Ekiti, Green Harvest has grown from a small family farm to a leading agricultural exporter in Nigeria.</p>
-                    <p>Our commitment to sustainable farming practices and premium quality produce has earned us recognition across Africa, Europe, and Asia.</p>
-                    <p>With over 500 hectares of farmland and state-of-the-art processing facilities, we deliver the authentic taste of Nigeria to the world.</p>
-                </div>
+    <section id="about" class="pt-[90px] bg-[#f9f9f9]">
+        <div class="container grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 items-center gap-[40px]">
+            <img class="rounded-[10px] shadow-lg md:h-90" src="./IMAGES/8.jpeg" alt="Green Harvest Farm Fields">
+            <div class="about-content p-0">
+                <h2 class="section-title relative text-4xl mb-5 text-green-800 pb-4 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-25 after:h-1 after:bg-green-500 " >Our Story</h2>
+                <p>Founded in 2005 in the lush farmlands of Ado Ekiti, Green Harvest has grown from a small family farm to a leading agricultural exporter in Nigeria.</p>
+                <p>Our commitment to sustainable farming practices and premium quality produce has earned us recognition across Africa, Europe, and Asia.</p>
+                <p>With over 500 hectares of farmland and state-of-the-art processing facilities, we deliver the authentic taste of Nigeria to the world.</p>
             </div>
         </div>
     </section>
